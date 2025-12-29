@@ -1,18 +1,15 @@
-# server.py
 import http.server
 import socketserver
 import os
 
 PORT = 7272
 
-# path ที่เก็บ Registration.html
-WEB_DIR = r"D:\663380228-3\Lab04\TestAutomationLab\StarterFiles"
+WEB_DIR = r"C:\Users\User\Desktop\Software Engineering\TestAutomationLab\StarterFiles"
 
-# เปลี่ยน working directory ไปที่โฟลเดอร์นั้น
 os.chdir(WEB_DIR)
 
 Handler = http.server.SimpleHTTPRequestHandler
 
 with socketserver.TCPServer(("", PORT), Handler) as httpd:
-    print(f"Server running at http://localhost:{PORT}/Registration.html")
+    print(f"Server running at http://localhost:{PORT}/Lab4/Registration.html")
     httpd.serve_forever()

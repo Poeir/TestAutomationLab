@@ -22,3 +22,7 @@ Registration Should Be Successful
     Title Should Be    Success
     Page Should Contain    Thank you for registering with us.
     Page Should Contain    We will send a confirmation to your email soon.
+
+Error Message Should Be
+    [Arguments]    ${message}
+    Page Should Contain    ${message}

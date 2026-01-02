@@ -14,6 +14,7 @@ UAT-Lab04-001-TC01 Register Success With Organization
     Fill Registration Form    Somyod    Sodsai    CS KKU    somyod@kkumail.com    091-001-1234
     Submit Registration
     Registration Should Be Successful
+    Capture Page Screenshot
     Close Browser
 
 UAT-Lab04-001-TC02 Register Success Without Organization
@@ -22,4 +23,5 @@ UAT-Lab04-001-TC02 Register Success Without Organization
     Fill Registration Form    Somyod    Sodsai    ${EMPTY}    somyod@kkumail.com    091-001-1234
     Submit Registration
     Registration Should Be Successful
+    Capture Page Screenshot
     Close Browser
